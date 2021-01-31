@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--<script src='https://kit.fontawesome.com/a076d05399.js'></script>-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EliteBlog</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Slabo+27px&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="./css/all.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- --------- Owl-Carousel ------------------->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+    <!-- ------------ AOS Library ------------------------- -->
+    <link rel="stylesheet" href="./css/aos.css">
+    <link rel="icon" type="image/ico" href="/assets/logo.png" />
+    <!-- Custom Style   -->
+    <link rel="stylesheet" href="./css/Style.css">
+
+    
+</head>
+
+<style>
+
+.hello{
+     padding :10px;
+    background: url("https://youandafteryou.com/wp-content/uploads/2018/01/blog-background.png");
+    background-repeat: no-repeat;
+    }
+  
+    #hemapriya {
+  width: 100%;
+  padding: 50px 0;
+  text-align: justify;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+	
+</style>
+
+<body>
+
+    <!-- ----------------------------  Navigation ---------------------------------------------- -->
+
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+               
+                <a href="#" class="text-gray"><b>
+                    ELITE BLOG </b> </a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                   <i class="fas fa-bars"></i>
+                   
+                   
+                </div>
+            </div>
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-link">
+                        <a href="#">HOME</a>
+                    </li>
+                    
+                    
+                    <li class="nav-link">
+                        <a href="#">PAGES</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social text-gray">
+             <!--  <a href="/new"><i class="	fas fa-pencil-alt" style="font-size:24px"></i></a> &nbsp; &nbsp; -->
+                <a href="https://www.facebook.com/"><i class="fa fa-facebook-f" style="font-size:24px"></i></a>  &nbsp; &nbsp;
+        
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram" style="font-size:24px"></i></a>  &nbsp; &nbsp;
+                <a href="https://twitter.com/login"><i class="fab fa-twitter" style="font-size:24px"></i></a>  &nbsp; &nbsp;
+                <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin" style="font-size:24px"></i></a>  &nbsp; &nbsp;
+        
+                <a href="/login" class="popup" onmouseover="myFunction()" >
+                    <i class="fas fa-user-circle" style="font-size:24px">
+                        <span class="popuptext" id="myPopup"> <%= cool %> </span>
+                    </i>
+                </a>  &nbsp; &nbsp;
+                
+            </div>
+        </div>  
+    </nav>
+
+    <!-- ------------x---------------  Navigation --------------------------x------------------- -->
+
+    <!----------------------------- Main Site Section ------------------------------>
+
+    <main>
+
+        <!------------------------ Site Title ---------------------->
+
+        <section class="site-title">
+            <div class="site-background" data-aos="fade-up" data-aos-delay="100">
+               
+              <a href="/new"><button class="btn"><b>Get Started</b></button> </a>
+            </div>
+        </section> 
+
+       <!-- <div class="row">
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			  <ol class="carousel-indicators">
+			    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			  </ol>
+			  <div class="carousel-inner">
+			    <div class="carousel-item active">
+			    	<div class="info">
+			      		<h1>ELITE BLOG</h1>
+			   			<div class="container">
+						<input class="form-control" type="text" placeholder="Search for the posts here" aria-label="Search"><br><br>
+						<button type="button" action="newpost.html" class="btn btn-light">SEARCH</button>
+					</div>
+			      	</div>
+			    </div>
+			    <div class="carousel-item">
+			    	<div class="info">
+			      		<h1>SLIDE TWO</h1>
+			      		
+			      	</div>
+			    </div>
+			    <div class="carousel-item">
+			    	<div class="info">
+			      		<h1>SLIDE THREE</h1>
+			      		
+			      	</div>
+			    </div>
+			  </div>
+			  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+			</div>
+		</div> -->
+
+        <!------------x----------- Site Title ----------x----------->
+
+        <!-- --------------------- Blog Carousel ----------------- -->
+
+       <!-- <section>
+            <div class="blog">
+                <div class="container">
+                    <div class="owl-carousel owl-theme blog-post">
+                        <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
+                            <img src="./assets/Blog-post/post-1.jpg" alt="post-1">
+                            <div class="blog-title">
+                                <h3>London Fashion week's continued the evolution</h3>
+                                <button class="btn btn-blog">Fashion</button>
+                                <span>2 minutes</span>
+                            </div>
+                        </div>
+                        <div class="blog-content" data-aos="fade-in" data-aos-delay="200">
+                            <img src="./assets/Blog-post/post-3.jpg" alt="post-1">
+                            <div class="blog-title">
+                                <h3>London Fashion week's continued the evolution</h3>
+                                <button class="btn btn-blog">Fashion</button>
+                                <span>2 minutes</span>
+                            </div>
+                        </div>
+                        <div class="blog-content" data-aos="fade-left" data-aos-delay="200">
+                            <img src="./assets/Blog-post/post-2.jpg" alt="post-1">
+                            <div class="blog-title">
+                                <h3>London Fashion week's continued the evolution</h3>
+                                <button class="btn btn-blog">Fashion</button>
+                                <span>2 minutes</span>
+                            </div>
+                        </div>
+                        <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
+                            <img src="./assets/Blog-post/post-5.png" alt="post-1">
+                            <div class="blog-title">
+                                <h3>London Fashion week's continued the evolution</h3>
+                                <button class="btn btn-blog">Fashion</button>
+                                <span>2 minutes</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-navigation">
+                        <span class="owl-nav-prev"><i class="fas fa-long-arrow-alt-left"></i></span>
+                        <span class="owl-nav-next"><i class="fas fa-long-arrow-alt-right"></i></span>
+                    </div>
+                </div>
+            </div>
+        </section>-->
+
+
+
+        <!-- ----------x---------- Blog Carousel --------x-------- -->
+
+        <!-- ---------------------- Site Content -------------------------->
+
+        
+        <section class="container" id="hii">
+            <div class="site-content">
+        
+                <div class="posts">
+                    <% for ( var i = 0; i < data.length; i++){ var datum=data[i]; ppid = pid[i] %>  
+
+                  <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="post-image">
+                            <div>
+                                <img src= "<%= datum.imgurl %>" class="img" alt="blog1">
+                            </div>
+                            <div class="post-info flex-row">
+                                <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
+                                <span id="hello"><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;</span>
+                
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <!--<p name="shit">
+                                    <%= ppid %>
+                            </p> -->
+
+                                <br>
+                            
+                            <a href="#"><font color="black"> <%= datum.title %>  </font></a> <br>
+
+                            <br>
+                                     <font color="black"> 
+                                         <%= datum.content %>
+                                    </font> .....   
+                            
+                            <br>
+                          
+                            <!--<button onClick="change()">Read more</button> -->
+                            <!--<a href="/<%= ppid %>"> Read more </a>-->
+                      
+              <br>
+              <i onclick="func(this)" class="fa fa-thumbs-up"></i> &nbsp; &nbsp;
+                      
+                      <br>
+                        </div>
+                    </div> 
+
+                        
+                  <!--  <div id="hemapriya">
+                        <%= datum.content %> 
+                  </div> -->
+                    <hr>
+                <% } %>
+
+                
+                   <!-- <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="post-image">
+                            <div>
+                                <img src="https://kelley.iu.edu/images/bloomington/programs/undergrad/advising/ksb-ugrad-graduation-topimage-768x450.jpg" class="img" alt="blog1">
+                            </div>
+                            <div class="post-info flex-row">
+                                <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;</span>
+                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 19, 2019</span>
+                    
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">New data recording system s</a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
+                                adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
+                                nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
+                                illum similique veniam tempore unde?
+                            </p>
+                            <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="post-image">
+                            <div>
+                                <img src="https://www.freelancinggig.com/blog/wp-content/uploads/2018/07/Programming-Language-for-Job-placements.jpg" class="img" alt="blog1">
+                            </div>
+                            <div class="post-info flex-row">
+                                <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;</span>
+                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;POSTED BY/ON</span>
+                    
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">New data recording system for road accidents</a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
+                                adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
+                                nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
+                                illum similique veniam tempore unde?
+                            </p>
+                            <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div> -->
+
+ 
+                    <div class="pagination flex-row">
+                        <a href="#"><i class="fas fa-chevron-left"></i></a>
+                        <a href="#" class="pages">1</a>
+                        <a href="#" class="pages">2</a>
+                        <a href="#" class="pages">3</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+         
+
+
+                <aside class="sidebar">
+                    <div class="category">
+                        <h2>WHAT'S MORE ?</h2>
+                        <ul class="category-list">
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="100">
+                                <a href="/myposts"> <%= mypost %></a>
+                            </li>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="200">
+                                <a href="/faq">FAQ</a>
+                            </li>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="300">
+                                <a href="#"> CONTACT US </a>
+            
+                            </li>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="400">
+                                <a href="#"> CHAT WITH US</a>
+                               
+                            </li>
+        
+                        </ul>
+                    </div>
+                    <div class="popular-post">
+                        <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Popular Post</h2>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="200">
+                            <div class="post-image">
+                                <div>
+                                    <img src="https://image.freepik.com/free-psd/business-people-working-with-laptop_53876-12022.jpg" class="img" alt="blog1">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span id="hello"><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;
+                                        </span>
+    
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="https://www.conted.ox.ac.uk/about/student-study-skills"><font color="black">Finding out more about the Study Skills Programme</font></a>
+                            </div>
+                        </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="200">
+                            <div class="post-image">
+                                <div>
+                                    <img src="https://gatecoachingarc.com/wp-content/uploads/2018/02/You-can-go-for-higher-studies-1024x1024.png" class="img" alt="blog1">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span id="hello"><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;
+                                        </span>
+    
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="https://books.google.co.in/books?id=os7KDwAAQBAJ&pg=PA214&lpg=PA214&dq=oxford+computer+science+gate+syllabus&source=bl&ots=P8yOhBhOgA&sig=ACfU3U1hgPfag_hGVpDk2o_fBR3SCAGtww&hl=en&sa=X&ved=2ahUKEwjHyZTLuvnoAhUqzjgGHcl8AhkQ6AEwE3oECAsQAQ#v=onepage&q=oxford%20computer%20science%20gate%20syllabus&f=false"><font color="black">Oxford - Computer Science GATE syllabus resources</font></a>
+                            </div>
+                        </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="200">
+                            <div class="post-image">
+                                <div>
+                                    <img src="https://image.freepik.com/free-psd/business-people-working-with-laptop_53876-12022.jpg" class="img" alt="blog1">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span id="hello"><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;
+                                        </span>
+    
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="https://www.conted.ox.ac.uk/about/student-study-skills"><font color="black">Finding out more about the Study Skills Programme</font></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="newsletter" data-aos="fade-up" data-aos-delay="300">
+                        <h2>MAIL US</h2>
+                        <div class="form-element">
+                            <input type="text" class="input-element" placeholder="Email">
+                            <button class="btn form-btn"> LOGIN </button>
+                        </div>
+                    </div>
+                    
+                </aside>
+            </div>
+        </section>
+
+        <!-- -----------x---------- Site Content -------------x------------>
+
+    </main>
+
+    <!---------------x------------- Main Site Section ---------------x-------------->
+
+
+    <!-- --------------------------- Footer ---------------------------------------- -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+                <h2>About us</h2>
+                <p>We provide the best consultancy services for higher education from different colleges , universities , educational institutions from all over the world</p>
+            </div>
+            <div class="newsletter" data-aos="fade-right" data-aos-delay="200">
+                <h2>MAIL US</h2>
+                <p>Stay update with our latest</p>
+                <div class="form-element">
+                    <input type="text" placeholder="Email"><span><i class="fas fa-chevron-right"></i></span>
+                </div>
+            </div>
+            <div class="instagram" data-aos="fade-left" data-aos-delay="200">
+                <h2>Instagram</h2>
+                <div class="flex-row">
+                    <img src="./assets/instagram/thumb-card3.png" alt="insta1">
+                    <img src="./assets/instagram/thumb-card4.png" alt="insta2">
+                    <img src="./assets/instagram/thumb-card5.png" alt="insta3">
+                </div>
+                <div class="flex-row">
+                    <img src="./assets/instagram/thumb-card6.png" alt="insta4">
+                    <img src="./assets/instagram/thumb-card7.png" alt="insta5">
+                    <img src="./assets/instagram/thumb-card8.png" alt="insta6">
+                </div>
+            </div>
+            <div class="follow" data-aos="fade-left" data-aos-delay="200">
+                <h2>Follow us</h2>
+                <div>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="move-up">
+            <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+        </div>
+    </footer>
+
+    <!-- -------------x------------- Footer --------------------x------------------- -->
+
+    <!-- Jquery Library file -->
+    <script src="./js/Jquery3.4.1.min.js"></script>
+
+    <!-- --------- Owl-Carousel js ------------------->
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <!-- ------------ AOS js Library  ------------------------- -->
+    <script src="./js/aos.js"></script>
+
+    <!-- Custom Javascript file -->
+    <script src="./js/main.js"></script>
+
+
+    <script>
+
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+        var yyyy = today.getFullYear();
+
+        today = dd + '/' + mm + '/' + yyyy;
+        document.getElementById("hello").innerHTML = today;
+
+        function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+
+                function func(x) {
+                    let c = 0
+                        x.classList.toggle("fa-thumbs-down");
+                        c = c+1
+                        console.log(c)
+                    }
+
+            function change() {
+                var x = document.getElementById("hemapriya");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        
+
+    (function () {
+        var options = {
+            whatsapp: "+91 9842204993", // WhatsApp number
+            call: "+91 9842204993", // Call phone number
+            call_to_action: "Contact us", // Call to action
+            button_color: "#E74339", // Color of button
+            position: "right", // Position may be 'right' or 'left'
+            order: "whatsapp,call", // Order of buttons
+        };
+        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+
+
+      
+    </script>
+</body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script>
+
+</html>

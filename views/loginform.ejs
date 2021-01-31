@@ -1,0 +1,194 @@
+<html>
+<head>
+	<title>form </title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<style>
+
+
+	.hello{
+     padding :10px;
+    background: url("https://youandafteryou.com/wp-content/uploads/2018/01/blog-background.png");
+    background-repeat: no-repeat;
+    }
+  
+
+	*{
+	margin: 0;
+	padding : 0;
+	font-family : sans-serif;
+}
+
+.hema{
+	height: 100%;
+	width: 100%;
+	color: blue;
+	background-color: blue;
+	background-image:url("https://codeinspiration.pro/wp-content/themes/theme_ci/img/ImageHero1.jpg") no-repeat;
+	background-position: center;
+	background-size: cover;
+	position : absolute;
+}
+
+.form-box{
+	width: 380px;
+	height: 480px;
+	position : relative;
+	margin: 6% auto;
+	background: #fff;
+	padding : 5px;
+	overflow: hidden;
+	background-color: #D3D3D3;
+}
+
+.button-box{
+	width:220px;
+	margin: 35px auto;
+	position: relative;
+	box-shadow : 0 0 20px 9px #ff61241f;
+	border-radius : 30px; 
+}
+
+.toggle-btn{
+	padding : 10px 30px;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	outline: none;
+	position: relative;
+}
+
+#btn{
+	top:0;
+	left:0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: linear-gradient(to right, black , grey);
+	border-radius : 30px;
+	transition: .5s;
+}
+
+.icons
+{
+	margin: 30px auto;
+	text-align: center;
+}
+
+.icons img{
+	width: 30px;
+	margin: 0 12px;
+	box-shadow: 0 0 20px 0 #7f7f7f3d;
+	cursor: pointer;
+	border-radius: 50%;
+}
+
+.input-group{
+	top:180px;
+	position: absolute;
+	width: 280px;
+	transition: .5s;
+}
+
+.input-field{
+	width: 100%;
+	padding : 10px 0;
+	margin: 5px 0;
+	border-left : 0;
+	
+	border-right: 0;
+	border-bottom : 1px solid #999;
+	outline : none;
+	background : transparent;
+}
+
+.submit-btn{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: linear-gradient(to right, #ff105f , #ffad06);
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+}
+
+.check-box{
+	margin: 30px 10px 30px 0;
+}
+
+span{
+	color: 	#A9A9A9;
+	font-size: 12px;
+	bottom: 68px;
+	position : absolute;
+
+}
+
+#login{
+	left:50px;
+}
+
+#register{
+	left: 450px;
+}
+</style>
+
+<body>
+	<div class="hello">
+		<div class="form-box">
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" onClick="login()" class="toggle-btn"><font color="white">LOGIN </font></button>
+				<button type="button" onClick="register()" class="toggle-btn"><font color="white">Register</font></button>
+			</div>
+			<form method="POST" action="/home" id="login" class="input-group">
+				<input type="email" class="input-field" name="uname" placeholder="Enter Username" required>
+				<input type="password" class="input-field"name="password" placeholder="Enter Password" required>
+				<input type="checkbox" class="check-box"><span>Remember Password</span> <br>
+				<button type="submit" action="/" class="submit-btn">Login </button>
+			</form>
+			<form method="POST" action="/" id="register" class="input-group">
+				<input type="email" class="input-field" name="email" placeholder="Enter Email-ID" required>
+				<input type="password" class="input-field" name="pwd" placeholder="Enter Password" required>
+				<input type="checkbox" class="check-box"><span>I agree and continue</span> <br>
+				<button type="submit" class="submit-btn">Sign up </button>
+			</form>
+		</div>
+	</div>
+		<script>
+			var x = document.getElementById("login");
+			var y = document.getElementById("register");
+			var z = document.getElementById("btn");
+
+			function register(){
+				x.style.left = "-400px";
+				y.style.left = "50px";
+				z.style.left = "110px";
+			}
+
+			function login(){
+				x.style.left = "50px";
+				y.style.left = "450px";
+				z.style.left = "0px";
+			}
+
+
+
+		</script>
+		</script>
+				<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script>
+
+		
+
+</body>
+
+</html>
